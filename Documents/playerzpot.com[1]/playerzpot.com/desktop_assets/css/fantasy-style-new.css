@@ -1,0 +1,3789 @@
+* {
+    margin: 0;
+    scroll-behavior: smooth;
+    padding: 0;
+    -ms-overflow-style: none;
+    /* IE 11 */
+    scrollbar-width: none;
+    /* Firefox 64 */
+}
+
+
+/* Fonts */
+
+@font-face {
+    font-family: "Roboto";
+    font-weight: 300;
+    src: url("../fonts/roboto-v29-latin-300.woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-weight: 400;
+    src: url("../fonts/roboto-v29-latin-regular.woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-weight: 500;
+    src: url("../fonts/roboto-v29-latin-500.woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-weight: 700;
+    src: url("../fonts/roboto-v29-latin-700.woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-weight: 900;
+    src: url("../fonts/roboto-v29-latin-900.woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "exo-bold";
+    font-weight: 700;
+    src: url("../fonts/Exo2-Black.html");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "exo-semi";
+    /* font-weight: 700; */
+    src: url("../fonts/Exo2-Bold.html");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "exo-reg";
+    /* font-weight: 700; */
+    src: url("../fonts/Exo2-Medium.html");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Russo One";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Russo One"), url("https://fonts.cdnfonts.com/s/15876/RussoOne-Regular.woff") format("woff");
+}
+
+.card-clicks {
+    border: 1px solid #C4D0DB;
+    background: #fff;
+    padding: 0px 10px;
+    margin-right: 15px;
+    height: 120px;
+    font-size: 12px;
+    flex: 0 0 325px;
+    color: #404569;
+    border-radius: 10px;
+    text-align: justify;
+    margin-top: 15px;
+}
+
+.links-color {
+    color: #005dff !important;
+    font-weight: 700;
+}
+
+.cards-games-dits {
+    padding: 0 0 0 10px;
+}
+
+.card-clicks div:nth-child(1) {
+    flex: 0 0 90px;
+}
+
+.cards-games-dits div:nth-child(1) {
+    /* color: #404569; */
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.cards-games-dits div:nth-child(2) {
+    /* color: #404569; */
+    margin-top: 5px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+body::-webkit-scrollbar {
+    width: 0.5px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 0, 0, 0.2);
+}
+
+body {
+    font-family: "Roboto";
+    text-align: center;
+}
+
+.bodyClass {
+    background-image: url("https://cdn.playerzpot.com/images/mainBody-ppm-bg.webp");
+    background-attachment: fixed;
+    background-repeat: repeat-x;
+    margin: 0 !important;
+    background-size: 65%;
+}
+
+.desktop {
+    display: block;
+}
+
+.mobile {
+    display: none;
+}
+
+.d-none {
+    display: none;
+}
+
+.d-flex {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.full-width {
+    width: 100%;
+    position: relative;
+}
+
+.relative {
+    position: relative;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.justify-content-start {
+    justify-content: flex-start;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-end {
+    justify-content: flex-end;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-around {
+    justify-content: space-around;
+}
+
+.justify-content-evenly {
+    justify-content: space-evenly;
+}
+
+.align-items-start {
+    align-items: flex-start;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-end {
+    align-items: flex-end;
+}
+
+.cur-pointer {
+    cursor: pointer;
+}
+
+.m-0-auto {
+    margin: 0 auto;
+}
+
+.m-t-5 {
+    margin-top: 5px;
+}
+
+.m-t-10 {
+    margin-top: 10px;
+}
+
+.m-t-25 {
+    margin-top: 25px;
+}
+
+.m-l-15 {
+    margin-left: 15px;
+}
+
+.p-t-20 {
+    padding-top: 20px;
+}
+
+.p-b-20 {
+    padding-bottom: 20px;
+}
+
+.p-t-50 {
+    padding-top: 50px;
+}
+
+.p-t-30 {
+    padding-top: 30px;
+}
+
+.p-20-0 {
+    padding: 20px 0px;
+}
+
+.p-l-20 {
+    padding-left: 20px;
+}
+
+.span-1 {
+    grid-column: span 1;
+}
+
+.span-2 {
+    grid-column: span 2;
+}
+
+.span-3 {
+    grid-column: span 3;
+}
+
+.z-99999 {
+    z-index: 99999;
+}
+
+.z-9 {
+    z-index: 9;
+}
+
+.settingScroll {
+    position: fixed;
+    top: 85px;
+    width: 100%;
+    background: #fff;
+    z-index: 9;
+}
+
+.m-auto {
+    margin: 0 auto
+}
+
+
+/* sidenav start */
+
+.allAvailGames .full-width {
+    display: flex;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 700;
+    color: #600880;
+    align-items: center;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.allAvailGames .full-width img {
+    padding-bottom: 4px;
+}
+
+.scrollMenuBar .slideMenuArrow {
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+
+.slideMenuArrow {
+    transform: rotate(270deg);
+}
+
+.allAvailGames {
+    height: 250px;
+    overflow: auto;
+    background: #fff;
+    margin-top: 7px;
+    padding-bottom: 10px;
+    border-radius: 7px;
+}
+
+.sidenavMenu {
+    height: 100%;
+    width: 85%;
+    position: fixed;
+    z-index: 9999999;
+    top: 0;
+    right: -1000px;
+    background-color: #E6E8F3;
+    overflow: hidden;
+    transition: 0.8s;
+    /* padding-top: 60px; */
+}
+
+.topgames-cards {
+    padding: 10px 0;
+}
+
+.divFlexirection .slideMenuArrow {
+    transform: rotate(180deg);
+    transition: 0.5s;
+}
+
+.allAvailGames .gamesThree div {
+    width: 80px;
+}
+
+.menuOption {
+    align-items: center;
+    text-align: left;
+    background: #fff;
+    margin-top: 7px;
+    padding: 10px 7px;
+    transition: 0.5s;
+    color: #600880;
+    border-radius: 7px;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.head.sidenavHead {
+    background: #600880;
+    display: flex;
+    align-items: center;
+    height: 54px;
+    justify-content: space-between;
+}
+
+.sidenavMenu .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.backdrop {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: #3a3b3f2e !important;
+    cursor: pointer;
+    z-index: 999999;
+    display: none;
+}
+
+.sidenavHeader {
+    background: #190F34;
+    position: fixed;
+    width: 80%;
+    z-index: 999;
+    top: 0;
+    padding: 20px 10px;
+}
+
+.sidenavContent {
+    padding: 0 10px;
+    overflow: auto;
+    margin-top: 80px;
+}
+
+
+/* sidenav ends */
+
+.flex-1 {
+    flex: 1;
+}
+
+.ppm-red {
+    color: red;
+}
+
+
+/* Mob download btn */
+
+#Downloadbtn {
+    width: 100%;
+    display: none;
+    background-color: #40b46e;
+    padding: 15px 15px 0px;
+    position: fixed;
+    bottom: -500px;
+    z-index: 99999;
+    box-shadow: 1px 1px 10px #40B46E;
+}
+
+#Downloadbtn a {
+    text-decoration: none;
+}
+
+.download-appbtn {
+    background: linear-gradient(180deg, #4faa31 0, #28750b 100%);
+    width: 65%;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.download-icons {
+    margin-right: 20px;
+}
+
+.btn-texts {
+    text-decoration: none;
+}
+
+.downloadtxt {
+    color: white;
+    font-size: 16px;
+    font-family: 500;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+#apkdownload {
+    background-color: #40b46e;
+    padding: 15px 0 0 0;
+    bottom: -500px;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 1px 1px 10px #40b46e;
+}
+
+#apkdownload {
+    height: 90px;
+}
+
+.downloadtxt {
+    margin-top: 50px;
+}
+
+.myClass {
+    animation: shake 0.5s;
+}
+
+.shine-box {
+    overflow: hidden;
+    position: absolute;
+    overflow: hidden;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+}
+
+.shine-box:before,
+.shine-box::after {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    content: "";
+    width: 20px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.6);
+    transform: skew(-50deg);
+}
+
+.shine-box:before {
+    animation: shine 3s ease infinite;
+}
+
+.shine-box::after {
+    animation: shineTwo 3s ease infinite;
+}
+
+@keyframes shine {
+    from {
+        left: -500px
+    }
+
+    to {
+        left: 500px
+    }
+}
+
+@keyframes shineTwo {
+    from {
+        left: -600px
+    }
+
+    to {
+        left: 500px
+    }
+}
+
+@keyframes shake {
+
+    10%,
+    90% {
+        transform: translate3d(-5px, 0, 0);
+    }
+
+    20%,
+    80% {
+        transform: translate3d(5px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-10px, 0, 0);
+    }
+
+    40%,
+    60% {
+        transform: translate3d(10px, 0, 0);
+    }
+}
+
+
+/* Desktop Navbar Start */
+
+.ppmf-navbardiv {
+    position: fixed;
+    width: 100%;
+    z-index: 9999999;
+}
+
+.offer-banner-image-new {
+    border-radius: 15px;
+}
+
+.ppmf-sticky {
+    width: 100%;
+    height: 85px;
+    background: #33206b;
+    position: fixed;
+    top: 0;
+}
+
+.nav-wrapper {
+    height: 85px;
+    max-width: 1250px !important;
+    margin: 0px auto !important;
+}
+
+.ppmf-nav-circle {
+    height: 85px;
+    width: 730px;
+    background-image: url("https://cdn.playerzpot.com/images/desk-bg-circle-logo.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.ppmf-nav-menulist {
+    list-style: none !important;
+    z-index: 9;
+}
+
+.ppmf-nav-item {
+    padding: 0 35px;
+    flex-grow: 1;
+    font-size: 14px;
+}
+
+.ppmf-nav-menu {
+    color: #12e4e4 !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-right: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.ppmf-nav-menu:hover {
+    color: #fff !important;
+}
+
+.ppmf-nav-menu:hover .hideHover {
+    display: none !important;
+}
+
+.ppmf-nav-menu:hover .showHover {
+    display: block !important;
+}
+
+.navmenu-div {
+    position: fixed;
+    right: 210px;
+    top: 64px;
+    background: #3d2a7a;
+    z-index: 9999999;
+    border-radius: 10px;
+}
+
+.sportsmenu-div {
+    position: fixed;
+    right: 110px;
+    top: 64px;
+    background: #3d2a7a;
+    z-index: 9999999;
+    border-radius: 10px;
+}
+
+ul.gamesMenu-list {
+    padding: 20px 30px 30px 45px;
+    width: 450px;
+}
+
+.list-inline {
+    padding-left: 0;
+    list-style: none;
+}
+
+.gamemenu-icons {
+    margin-right: 10px;
+}
+
+.gametab-icons {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 800;
+}
+
+.menus-item-list {
+    justify-content: space-evenly;
+    padding-top: 15px;
+}
+
+li.casual-menus {
+    font-size: 15px;
+    color: #fff;
+    text-align: left;
+    padding: 8px 0px;
+    font-weight: 600;
+}
+
+li.casual-menus:hover {
+    color: #dec021;
+}
+
+.ppmf-casual-list li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Banner Start */
+
+.wholeContainer {
+    margin: 0px auto;
+    max-width: 1250px;
+    position: relative;
+    padding: 0px 10px;
+}
+
+.ppmf-header-bg {
+    height: 445px;
+    background-image: linear-gradient(#33206b 27.94%, #110a21 120%);
+    position: relative;
+}
+
+.ppmf-header-circle {
+    height: 445px;
+    width: 730px;
+    margin: 0;
+    background-image: url("https://cdn.playerzpot.com/images/desk-bg-circle-logo.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.ppmf-header-triangle {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-right: 460px solid rgb(19 12 42 / 30%);
+    border-top: 360px solid transparent;
+}
+
+.ppmf-header-inner-container {
+    height: 445px;
+}
+
+.ppmf-header-maintext {
+    padding-bottom: 45px;
+    text-align: left;
+    max-width: 700px;
+}
+
+.ppmf-header-maintxt1 {
+    color: white;
+    font-size: 46px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.ppmf-header-maintxt2 {
+    color: #12E4E4;
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 60px;
+    text-transform: uppercase;
+}
+
+.ppmf-header-phone-scan {
+    margin-bottom: 35px;
+}
+
+.ppmf-header-phone-txt {
+    padding-bottom: 8px;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.ppmf-header-enter-no {
+    position: relative;
+}
+
+.ppmf-header-no-input {
+    height: 40px;
+    width: 295px;
+    padding: 0 15px 0px 40px;
+    background: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    border: 1px solid #fff;
+    border-radius: 12px;
+    outline: 0;
+}
+
+.ppmf-header-phone-cntry-code {
+    margin-left: 12px;
+    font-size: 15px;
+    line-height: 3px;
+    color: rgb(0, 0, 0, 0.8);
+    position: absolute;
+    left: 0;
+}
+
+::placeholder {
+    color: rgb(149, 153, 176);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.ppmf-header-get-linkbtn {
+    width: 120px;
+    height: 42px;
+    color: #fff;
+    background: #40B46E;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 0px 12px 12px 0px;
+    border: none;
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+}
+
+.ppmf-header-get-linkbtn:hover {
+    background-color: #25A557;
+}
+
+.ppmf-header-div-line {
+    height: 100px;
+    margin: 0px 25px 0px;
+    border-right: 1.5px solid;
+    border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #452B92, #452B92, #452B92, rgba(0, 0, 0, 0)) 1 100%;
+}
+
+.ppmf-header-qr-scan {
+    text-align: left;
+}
+
+.ppmf-header-scan-img {
+    padding: 4px;
+    background-color: white;
+}
+
+.ppmf-header-scan-txt {
+    padding-left: 20px;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.ppmf-tabs-container {
+    border-bottom: 1px solid;
+    border-image: linear-gradient(to right, rgba(255, 255, 255), rgba(0, 0, 0, 0.3), rgba(255, 255, 255)) 1 1 100%;
+}
+
+.ppmf-tabs-bg,
+.ppmf-bg-white {
+    background-color: white;
+}
+
+.ppmf-tabs-list {
+    list-style: none;
+    -ms-overflow-style: none;
+    /* IE 11 */
+    scrollbar-width: none;
+    /* Firefox 64 */
+    overflow: auto;
+    justify-content: space-between;
+}
+
+.ppmf-tabs-list::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+.ppmf-tabs-list li,
+.ppmf-tabs-list li h2 {
+    padding: 13px 15px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 500;
+    text-align: center;
+    text-transform: capitalize;
+    border-bottom: 4px solid transparent;
+    flex: 0 0 auto;
+}
+
+.ppmf-tabs-container ul a {
+    text-decoration: none;
+    color: inherit;
+    flex: 0 0 auto;
+}
+
+.banner-imgs-div {
+    position: relative;
+}
+
+img.smriti-bhuvi-Img.banner-img-two.d-flex {
+    position: absolute;
+    right: 230px;
+    top: 25px;
+    /* rotate: 15deg; */
+}
+
+.text-left {
+    text-align: left;
+}
+
+.tablinks {
+    border-bottom: none;
+    font-weight: 700;
+    color: rgb(149, 153, 176);
+}
+
+.tablinks:hover {
+    color: #404569;
+}
+
+.activeTab {
+    color: #404569 !important;
+    font-weight: 700;
+    border-bottom: 4px solid #40B46E !important;
+}
+
+.ppmf-pin-1,
+.ppmf-pin-2 {
+    border-bottom: 4px solid;
+    border-image: linear-gradient(to left, #452B92, rgba(42, 26, 88, 0.245455), rgba(23, 14, 48, 0)) 1 1 100%;
+}
+
+.ppmf-pin-1 {
+    width: 190px;
+    margin-bottom: 4px;
+}
+
+.ppmf-pin-2 {
+    width: 140px;
+    margin-left: 50px;
+}
+
+.ppmf-pin-3,
+.ppmf-pin-4 {
+    border-bottom: 4px solid;
+    border-image: linear-gradient(to right, #452B92, rgba(42, 26, 88, 0.245455), rgba(23, 14, 48, 0)) 1 1 100%;
+}
+
+.ppmf-pin-3 {
+    width: 190px;
+    margin-bottom: 4px;
+}
+
+.ppmf-pin-4 {
+    width: 140px;
+    margin-right: 50px;
+}
+
+.ppmf-title {
+    margin: 0px 15px;
+    color: #404569;
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+
+/* .ppmf-container-bg-white,
+.ppmf-container-bg-grey {
+    padding: 135px 0px 50px 0;
+} */
+
+.ppmf-container-bg-white,
+.ppmf-container-bg-grey {
+    padding: 30px 0px 50px 0;
+}
+
+.commonClass.activePadding {
+    padding: 150px 0 0 0 !important;
+    background: #fff;
+}
+
+.breadCrumb {
+    font-weight: 500;
+    background: #fff;
+    padding: 20px 0;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+.breadCrumb:last-child {
+    color: #9599b0;
+}
+
+.breadCrumb a,
+.breadCrumb a:hover {
+    color: #404569 !important;
+}
+
+.ppmf-sports-bg-grey {
+    padding: 50px 0px 0px;
+}
+
+.ppmf-sports-bg-white {
+    padding: 50px 0px;
+}
+
+.ppmf-offersDivBox {
+    padding: 40px 0;
+}
+
+.offer-box {
+    max-width: 340px;
+    width: 100%;
+}
+
+.offer-box-main {
+    width: 700px;
+}
+
+.ppmf-container-bg-white,
+.ppmf-sports-bg-white {
+    background-color: rgb(255, 255, 255, 0.7);
+}
+
+.ppmf-container-bg-grey,
+.ppmf-sports-bg-grey {
+    background-color: rgba(240, 240, 240, 0.8);
+}
+
+.ppmf-about-descBox,
+.ppmf-about-3Boxes,
+.ppmf-realmoney-3Boxes,
+.ppmf-tips-content,
+.ppmf-consider-boxes,
+.ppmf-topgames-content,
+.ppmf-review-content,
+.ppmf-faq-accordions,
+.ppmf-Container-content,
+.innerContainer {
+    max-width: 1100px;
+    margin: 0px auto;
+}
+
+.ppmf-about-desc {
+    padding-right: 40px;
+}
+
+.ppmf-about-desc-txt {
+    color: #404569;
+    text-align: justify;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+.ppmf-about-3boxes-inner,
+.ppmf-realmoney-3boxes-inner {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 50px;
+}
+
+.ppmf-about-3boxes-inner::-webkit-scrollbar {
+    height: 0px;
+}
+
+.ppmf-about-3boxes-inner-bg {
+    height: 215px;
+    box-shadow: 0 4px 2px rgb(0 0 0 / 8%), 0 0 6px rgb(0 0 0 / 5%);
+    border-radius: 12px;
+    background-color: #E9ECEE;
+    padding: 15px;
+}
+
+.ppmf-about-3boxes-inner-txt1,
+.ppmf-about-3boxes-inner-txt2 {
+    margin-bottom: 10px;
+    text-align: left;
+    color: #404569;
+}
+
+.ppmf-about-3boxes-inner-txt1 {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.ppmf-about-3boxes-inner-txt2 {
+    height: 162px;
+    font-size: 15px;
+    font-weight: 400;
+    overflow-y: auto;
+}
+
+.ppmf-about-3boxes-inner-txt2::-webkit-scrollbar {
+    width: 0px;
+}
+
+.ppmf-about-clickhere,
+.ppmf-realmoney-clickhere {
+    margin: 50px 0px 0px;
+}
+
+.ppmf-about-clickhere a,
+.ppmf-realmoney-clickhere a {
+    text-decoration: none;
+}
+
+.ppmf-about-clickhere-txt {
+    width: 585px;
+    padding: 10px 50px;
+    font-size: 17px;
+    font-weight: 700;
+    color: #523C93;
+    border: 1px solid #523C93;
+    border-radius: 15px;
+    background-color: white;
+    flex-wrap: wrap;
+}
+
+.ppmf-about-clickhere-txt:hover {
+    background-color: #e5e0f6;
+    /* color: #fff; */
+    transition: all 0.5s ease-in-out;
+}
+
+.ppmf-about-clickhere-span {
+    font-weight: 600;
+    color: rgb(0, 0, 0, 0.8);
+}
+
+.ppmf-realmoney-3Boxes,
+.ppmf-tips-content,
+.ppmf-tips-viewAll,
+.ppmf-tips-grid,
+.ppmf-consider-boxes,
+.ppmf-faq-accordions,
+.ppmf-Container-content {
+    padding: 50px 0px 0px;
+}
+
+.ppmf-realmoney-cards-outercrcle,
+.ppmf-joinPot-no-outercrcle {
+    height: 50px;
+    width: 50px;
+    border-radius: 30px;
+    background-color: #6D4CD0;
+}
+
+.ppmf-realmoney-cards-innercrcle,
+.ppmf-joinPot-no-innercrcle {
+    height: 45px;
+    width: 45px;
+    border-radius: 25px;
+    background-color: #503A92;
+    color: white;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.ppmf-realmoney-cards-heading-txt,
+.ppmf-joinPot-headingTxt {
+    width: 70%;
+    color: #404569;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.ppmf-realmoney-cards {
+    position: relative;
+    height: 200px;
+    width: 320px;
+    margin-top: 30px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.ppmf-realmoney-cards-mid {
+    height: 95px;
+    width: 314px;
+    position: absolute;
+    border-image: linear-gradient(to bottom, transparent 20px, transparent 0px, #503A92 200px) 0% 100%;
+    border-width: 3px;
+    border-style: solid;
+    border-bottom: none;
+}
+
+.ppmf-realmoney-cards-btm-txt {
+    position: absolute;
+    bottom: 0px;
+    color: white;
+    padding: 60px 30px 15px;
+    font-size: 17px;
+}
+
+.ppmf-realmoney-maintxt {
+    color: #404569;
+    font-size: 18px;
+}
+
+.ppmf-realmoney-videotxt {
+    color: #404569;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.game-ones-cardsdiv a {
+    text-decoration: none;
+}
+
+.htp-sec-heading {
+    text-align: left;
+    color: #404569;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px 0;
+    text-transform: capitalize;
+}
+
+.ppmf-realmoney-subtxt {
+    color: #555B70;
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 5px;
+}
+
+.ppmf-realmoney-video {
+    padding-top: 15px;
+    cursor: pointer;
+}
+
+.ppmf-realmoney-table {
+    padding-top: 15px;
+    flex-direction: column;
+}
+
+.ppmf-realmoney-tableborder {
+    border: 1px solid rgb(0, 0, 0, 0.1);
+    border-radius: 15px;
+    background-color: white;
+    /* box-shadow: 0px 4px 13px rgb(0 0 0 / 15%); */
+}
+
+.ppmf-realmoney-table-leftPart {
+    width: 230px;
+    border-right: 1px solid rgb(0, 0, 0, 0.1);
+}
+
+.ppmf-realmoney-table-imgbg,
+.ppmf-realmoney-mob-table-imgbg {
+    width: 35px;
+    /* height: 20px;
+    width: 20px;
+    border-radius: 5px;
+    padding: 5px;
+    background-image: url(https://cdn.playerzpot.com/images/rectangle-background.png);
+    background-repeat: no-repeat;
+    background-position: center; */
+}
+
+.ppmf-realmoney-table-imgbg {
+    margin: 10px 10px 10px 15px;
+}
+
+.ppmf-realmoney-table-imgbg1,
+.ppmf-realmoney-mob-table-imgbg1 {
+    height: 25px;
+    width: 25px;
+}
+
+.ppmf-realmoney-table-imgbg1 {
+    margin: 10px 15px 15px 15px;
+}
+
+.ppmf-realmoney-table-lefttxt {
+    color: #393E5F;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.ppmf-realmoney-table-righttxt {
+    width: 450px;
+    text-align: left;
+    padding: 18px 20px;
+    color: #787D9E;
+    font-size: 15px;
+}
+
+.ppmf-realmoney-table-righttxt span {
+    color: #393E5F;
+    padding: 0px 4px;
+    font-weight: 700;
+}
+
+.ppmf-realmoney-table-midLine {
+    border-top: 1px solid rgb(0, 0, 0, 0.1);
+}
+
+.ppmf-realmoney-mob-table {
+    width: 100%;
+    padding-top: 15px;
+}
+
+.ppmf-realmoney-mob-table-imgbg {
+    margin: 10px 10px 10px 0px;
+}
+
+.ppmf-realmoney-mob-table-imgbg1 {
+    margin: 10px 15px 15px 0px;
+}
+
+.ppmf-realmoney-mob-table-txt {
+    color: #404569;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: left;
+    line-height: 15px;
+    flex-direction: column;
+    padding: 10px 0px;
+}
+
+.ppmf-realmoney-mob-table-subtxt {
+    color: #787D9E;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.ppmf-realmoney-mob-table-subtxt span {
+    color: #404569;
+    font-weight: 900;
+}
+
+.ppmf-realmoney-mob-table-midLine {
+    width: 100%;
+    border-top: 1px solid;
+    border-image: linear-gradient(90deg, white, #523C93, #523C93, #523C93, white) 1;
+}
+
+.ppmf-tips-maintxt {
+    color: #404569;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.ppmf-tips-trick {
+    padding-top: 20px;
+}
+
+.ppmf-tips-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px 50px;
+}
+
+.ppmf-tips-boxes {
+    border: 1px solid rgb(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0px 4px 13px rgb(0 0 0 / 15%);
+    background-color: white;
+    color: #393E5F;
+    transition: all 0.3s ease-in-out;
+}
+
+.ppmf-tips-boxes:hover {
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.05);
+    background-color: #40B46E;
+    color: white;
+    border: 1px solid #ffffff;
+}
+
+.ppmf-tips-subtxt {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+    padding: 20px 0px;
+}
+
+.viewall-btndiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.view-allbtn {
+    border: 1px solid #523c93;
+    font-weight: 600;
+    border-radius: 15px;
+    display: inline-block;
+    padding: 12px 40px;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    font-size: 16px;
+    color: #523c93;
+    z-index: 1;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.view-allbtn:hover {
+    background-color: #e5e0f6;
+    transition: all .5s ease-in-out;
+}
+
+.ppmf-consider-boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.ppmf-consider-left-box,
+.ppmf-consider-right-box {
+    padding: 20px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0px 4px 13px rgb(0 0 0 / 15%);
+}
+
+.ppmf-consider-left-box {
+    border: 1.5px solid #40B46E;
+}
+
+.ppmf-consider-right-box {
+    border: 1.5px solid #DA1129;
+}
+
+.ppmf-consider-left-box:hover {
+    background-color: rgb(64, 180, 110, 0.1);
+}
+
+.ppmf-consider-right-box:hover {
+    background-color: rgb(218, 17, 41, 0.1);
+}
+
+.ppmf-consider-headtxt {
+    color: #404569;
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+
+.ppmf-consider-sub {
+    padding: 5px 20px 5px 40px;
+    color: #404569;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.ppmf-consider-subtxt {
+    padding: 5px 5px 10px;
+}
+
+.ppmf-topgames-content,
+.ppmf-review-content {
+    padding: 15px 0px 0px;
+}
+
+.ppmf-topgames-maintxt {
+    width: 500px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #555b70;
+    margin: 0px auto;
+}
+
+.ppmf-topgames-grid {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+.ppmf-topgames-grid::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+.ppmf-topgames-card {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.ppmf-topgames-card:hover {
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.05);
+}
+
+.ppmf-topgames-cardImg {
+    width: 100%;
+    height: 100%;
+}
+
+.ppmf-topgames-txt {
+    width: 100%;
+    height: 22%;
+    padding: 5px 0px;
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgba(28, 18, 56, 0.85);
+    position: absolute;
+    bottom: 0px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.ppmf-topgames-lasttxt {
+    width: 100%;
+    height: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    background-color: rgba(28, 18, 56, 0.85);
+    position: absolute;
+    bottom: 4px;
+    border-radius: 15px;
+}
+
+.ppmf-topgames-lasttxt:hover {
+    background-color: rgba(51, 33, 103, .85);
+}
+
+.ppmf-Container-review-bg {
+    background: url("https://cdn.playerzpot.com/images/desk-bg-one-ppm.webp"), #E3E4F0;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 135px 0px 50px;
+}
+
+.ppmf-review-header {
+    font-size: 18px;
+    color: #404569;
+    font-weight: 400;
+    padding-bottom: 15px;
+}
+
+.ppmf-review-header-txt {
+    padding: 0px 25px;
+}
+
+.ppmf-review-vertical-line {
+    height: 20px;
+    border-left: 2px solid #404569;
+}
+
+.ppmf-ratingstar-img {
+    padding: 0px 4px;
+}
+
+.ppmf-review-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    padding: 50px 0px 22px;
+}
+
+.ppmf-review-grid::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+.ppmf-review-card {
+    height: 220px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 13px rgb(0 0 0 / 15%);
+    padding: 15px 15px;
+    position: relative;
+    background-color: #fff;
+}
+
+.ppmf-review-carduser-details {
+    text-align: left;
+    margin-left: 5px;
+}
+
+.ppmf-review-carduser-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #404569;
+    text-transform: capitalize;
+}
+
+.ppmf-review-carduser-city {
+    font-size: 16px;
+    color: #a3a0a0;
+}
+
+.ppmf-review-carduser-review {
+    font-size: 14px;
+    text-align: justify;
+    color: #404569;
+    padding: 10px 0 0 0;
+    font-weight: 500;
+}
+
+.ppmf-review-card-win-amt {
+    position: absolute;
+    bottom: -8px;
+    border: 2px solid #ffffff;
+    position: absolute;
+    bottom: -20px;
+    background: #40b46e;
+    padding: 8px 0px;
+    border-radius: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 22px;
+    width: 70%;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 16%), 0 0 0 1px rgb(0 0 0 / 8%);
+    transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ppmf-review-card-win {
+    margin-top: 20px;
+}
+
+.ppmf-faq-accordion {
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgb(37 37 37 / 23%);
+    position: relative;
+    margin-bottom: 15px;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.ppmf-faq-accordion-heading {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    color: #404569;
+    padding: 25px 55px 25px 30px;
+    text-transform: capitalize;
+}
+
+.arrowImg {
+    position: absolute;
+    right: 30px;
+}
+
+.upDownArrow {
+    width: 25px;
+}
+
+.upDownArrow.activeArrow {
+    transform: rotate(180deg);
+    position: absolute;
+    right: 0;
+    display: none;
+}
+
+#about-text {
+    padding: 10px 55px 20px 30px;
+    text-align: left;
+    font-size: 15px;
+    color: #404569;
+}
+
+.about-subText {
+    color: #404569;
+}
+
+.about-subText:hover {
+    color: blue;
+}
+
+#about-text-list {
+    padding: 0px 20px 20px 45px;
+    text-align: left;
+    font-size: 15px;
+    color: #404569;
+}
+
+.ppmf-whyplay {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 1px solid #C4D0DB;
+    border-radius: 15px;
+    padding: 0px 10px;
+    background-color: #fff;
+}
+
+.ppmf-whyplay-border-btm {
+    border-bottom: 1px solid #C4D0DB;
+    padding: 20px 0px 20px;
+}
+
+.ppmf-whyplay .span-1:nth-child(1) .ppmf-whyplay-border-btm .ppmf-whyplay-inBox,
+.ppmf-whyplay .span-1:nth-child(4) .ppmf-whyplay-border-btm .ppmf-whyplay-inBox {
+    padding: 0px 10px 0px 0px;
+}
+
+.ppmf-whyplay .span-1:nth-child(2) .ppmf-whyplay-border-btm .ppmf-whyplay-inBox,
+.ppmf-whyplay .span-1:nth-child(5) .ppmf-whyplay-border-btm .ppmf-whyplay-inBox {
+    padding: 0px 10px 0px;
+    border-left: 1px solid #C4D0DB;
+    border-right: 1px solid #C4D0DB;
+}
+
+.ppmf-whyplay .span-1:nth-child(3) .ppmf-whyplay-border-btm .ppmf-whyplay-inBox,
+.ppmf-whyplay .span-1:nth-child(6) .ppmf-whyplay-border-btm .ppmf-whyplay-inBox {
+    padding: 0px 0px 0px 10px;
+}
+
+.ppmf-whyplay .span-1:nth-child(4) div,
+.ppmf-whyplay .span-1:nth-child(5) div,
+.ppmf-whyplay .span-1:nth-child(6) div {
+    border-bottom: none;
+}
+
+.ppmf-whyplay-inBox {
+    height: 225px;
+}
+
+.ppmf-whyplay-teethImg {
+    height: 100px;
+    width: 100px;
+    background-image: url('../../../cdn.playerzpot.com/images/round-teeth-green.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.ppmf-whyplay-gamesImg {
+    height: 80px;
+    width: 80px;
+    background-color: #40B46E;
+    border-radius: 40px;
+}
+
+.ppmf-whyplay-gametxt1 {
+    color: #404569;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 10px 0px;
+}
+
+.ppmf-whyplay-gametxt2 {
+    color: #404569;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.ppmf-termContentBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ppmf-termContent-bg {
+    padding: 20px 0px 40px;
+}
+
+.text-darkblue {
+    color: #404569;
+    font-weight: 500;
+}
+
+.ppmf-mob-banner-main-txt {
+    color: #12E4E4;
+    font-weight: 700;
+    font-size: 47px;
+}
+
+.ppmf-term-title {
+    color: #404569;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+.ppmf-careers-title {
+    color: #404569;
+    font-size: 35px;
+    font-weight: 700;
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+.ppmf-offers-title {
+    color: #404569;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+.ppmf-term-desc-txt {
+    font-size: 15px;
+    color: #404569;
+    text-align: justify;
+    line-height: 25px;
+}
+
+.ppmf-term-descHighLight-txt {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 10px 0px;
+}
+
+.ppmf-term-text-right {
+    color: #9D97AE;
+    text-align: right;
+    font-size: 14px;
+}
+
+.ppmf-winning-bfc {
+    border-radius: 10px;
+    background: white;
+    margin-top: 15px;
+}
+
+.ppmf-tableCard {
+    padding: 10px;
+    border: 1px solid lightgray;
+    /* border-bottom: 1px solid; */
+    /* border-image: linear-gradient(to right, rgba(255, 255, 255), rgba(0, 0, 0, 0.3), rgba(255, 255, 255)) 1 1 100%; */
+}
+
+.ppmf-wingbfc-titleTxt {
+    font-size: 16px;
+    font-weight: 500;
+    color: #393E5F;
+    text-align: center;
+}
+
+.ppmf-wingbfc-contentTxt {
+    font-size: 14px;
+    font-weight: 500;
+    color: #393E5F;
+    text-align: center;
+}
+
+.ppmf-wingbfc-titleBg {
+    background-color: #D4D8F5;
+}
+
+.ppmf_border_bottom {
+    border-bottom: 1px solid #404569;
+    padding-bottom: 15px;
+}
+
+.ppmf_new_update_text {
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.ppmf-howTo-joinPot {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 30px;
+}
+
+.ppmf-joinPot-cards {
+    position: relative;
+    height: 150px;
+    width: 252px;
+    margin-top: 20px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.ppmf-joinPot-card-mid {
+    height: 70px;
+    position: absolute;
+    width: 248px;
+    border-image: linear-gradient(to bottom, transparent 15px, transparent 0px, #503A92 120px) 0% 100%;
+    border-width: 2px;
+    border-style: solid;
+    border-bottom: none;
+}
+
+.ppmf-joinPot-card-btmTxt {
+    position: absolute;
+    bottom: 0px;
+    color: white;
+    padding: 15px 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size: 14px;
+}
+
+.scrollNav {
+    border-bottom: 1px solid;
+    border-image: linear-gradient(to right, rgba(255, 255, 255), rgba(0, 0, 0, 0.3), rgba(255, 255, 255)) 1 1 100%;
+}
+
+.scrollNav ul {
+    overflow: auto;
+}
+
+.scrollNav ul li {
+    cursor: pointer;
+    padding: 13px 3px;
+    margin-right: 40px;
+    font-size: 14px;
+    font-weight: 600;
+    flex: 0 0 auto;
+}
+
+.ppmf-fantasy-app-download {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 30px;
+}
+
+.ppmf-fantasy-app-download .span-2 p {
+    height: 40px;
+}
+
+.sportsCards-fantasy:hover {
+    color: #fff !important;
+    background-color: #6D4CD0;
+    cursor: pointer;
+}
+
+.sportsCards-imgone-div {
+    margin-right: 15px;
+}
+
+.sportsCards-fantasy-name {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+img.sportsFantasy-img {
+    width: 40px;
+}
+
+.sportsCards-fantasy {
+    width: 240px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 4px rgb(0 0 0 / 25%);
+    padding: 7px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    color: #33206b;
+}
+
+.sportsFantasy-one {
+    flex-wrap: wrap;
+    gap: 5px 25px;
+}
+
+.sportsFantasy-ones-cardDiv a {
+    text-decoration: none;
+}
+
+.game-card-one:hover {
+    color: #fff !important;
+    background-color: #6D4CD0;
+    cursor: pointer;
+}
+
+.card-imgone-div {
+    margin-right: 15px;
+}
+
+.game-card-name {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+img.game-one-img {
+    width: 35px;
+}
+
+.game-card-one {
+    width: 180px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 4px rgb(0 0 0 / 25%);
+    padding: 7px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    color: #33206b;
+}
+
+.game-one-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #404569;
+    padding-bottom: 20px;
+    text-align: left;
+}
+
+.casual-games-one {
+    gap: 25px;
+}
+
+.download-step-cards {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 50px;
+}
+
+.shading-card {
+    position: relative;
+    width: 329px;
+    border-top: none;
+    border-bottom: 50px;
+    border-image: linear-gradient(to top, #503a92 -100px, transparent 100px) 1 100%;
+    border-width: 0px 2px;
+    border-style: solid;
+    border-image-slice: 1;
+    padding-bottom: 15px;
+    margin: 60px 0px;
+}
+
+.shading-card::after {
+    content: '';
+    height: 60px;
+    width: 333px;
+    position: absolute;
+    border-radius: 0px 0px 20px 20px;
+    bottom: -60px;
+    left: -2px;
+    z-index: 1;
+    background: #503a92;
+}
+
+.shading-card p {
+    margin: 14px 15px;
+    position: absolute;
+    bottom: -60px;
+    color: white;
+    z-index: 9;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.shading-card-no {
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    top: -30px;
+    left: 15px;
+    font-size: 30px;
+    font-weight: 900;
+    padding: 5px;
+    background: #40b46e;
+    color: #fff;
+    border-radius: 100%;
+    border: 4px solid #2c9d59;
+}
+
+.ppmf-term-desc-txt.p-t-20 .bold,
+.static_description .bold {
+    font-weight: 500;
+    color: #33206b;
+}
+
+.full-width.gamesThree div a {
+    color: #600880;
+}
+
+
+/* media query start  */
+
+.landing-mob-bg {
+    width: 100%;
+    background-color: #2c1b5e;
+}
+
+.landing-mob-bg-circle {
+    background-image: url('https://cdn.playerzpot.com/images/mob-bg-circle.webp');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.landing-mob-nav {
+    height: 60px;
+    padding: 0px 10px;
+}
+
+.landing-mob-download-btn {
+    margin-top: -25px;
+}
+
+.fantasy-mob-banner-img {
+    padding-top: 35px;
+}
+
+.fantasy-mob-banner-txt {
+    padding: 0px 5px 60px;
+    margin-top: 15px;
+}
+
+.games-mob-banner-img {
+    padding-top: 40px;
+}
+
+.games-mob-banner-txt {
+    padding: 0px 5px 60px;
+    margin-top: 0px;
+}
+
+.fantasy-mob-banner-txt1 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.fantasy-mob-banner-txt2 {
+    color: #12E4E4;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+
+.popup {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 400px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px 5px rgba(0, 0, 0, 0.1);
+    margin-top: -25px;
+    z-index: 9999999;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.popup-title {
+    color: #393E5F;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.popup-num {
+    font-size: 25px;
+    color: #393E5F;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+
+/* .popup > *{
+    margin: 15px 0px;
+
+} */
+
+.popup .close-btn {
+    position: absolute;
+    top: -31px;
+    right: 0px;
+    width: 30px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.15);
+    color: #111;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: top 0ms ease-in-out 300ms, opacity 300ms ease-in-out, margin-top 300ms ease-in-out;
+}
+
+.popup-backdrop {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: rgba(24, 15, 44, 0.8) !important;
+    cursor: pointer;
+    z-index: 999999;
+    display: none;
+}
+
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999999999;
+    background-color: rgba(0, 0, 0, 0.16);
+}
+
+#loader {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #487647;
+    -webkit-animation: spin 2s linear infinite;
+    /* Chrome, Opera 15+, Safari 5+ */
+    -moz-animation: spin 2s linear infinite;
+    /* Chrome, Opera 15+, Safari 5+ */
+    -o-animation: spin 2s linear infinite;
+    /* Chrome, Firefox 16+, IE 10+, Opera */
+    animation: spin 2s linear infinite;
+    /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+
+#loader:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #F79424;
+    -webkit-animation: spin 3s linear infinite;
+    /* Chrome, Opera 15+, Safari 5+ */
+    -moz-animation: spin 3s linear infinite;
+    /* Chrome, Firefox 16+, IE 10+, Opera */
+    -o-animation: spin 3s linear infinite;
+    /* Chrome, Firefox 16+, IE 10+, Opera */
+    animation: spin 3s linear infinite;
+    /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+
+#loader:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #302A2A;
+    -webkit-animation: spin 1.5s linear infinite;
+    /* Chrome, Opera 15+, Safari 5+ */
+    -moz-animation: spin 1.5s linear infinite;
+    /* Chrome, Firefox 16+, IE 10+, Opera */
+    -o-animation: spin 1.5s linear infinite;
+    /* Chrome, Firefox 16+, IE 10+, Opera */
+    animation: spin 1.5s linear infinite;
+    /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        /* Chrome, Opera 15+, Safari 3.1+ */
+        -moz-transform: rotate(0deg);
+        /* Chrome, Opera 15+, Safari 3.1+ */
+        -o-transform: rotate(0deg);
+        /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);
+        /* IE 9 */
+        transform: rotate(0deg);
+        /* Firefox 16+, IE 10+, Opera */
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        /* Chrome, Opera 15+, Safari 3.1+ */
+        -moz-transform: rotate(360deg);
+        /* Chrome, Opera 15+, Safari 3.1+ */
+        -o-transform: rotate(360deg);
+        /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);
+        /* IE 9 */
+        transform: rotate(360deg);
+        /* Firefox 16+, IE 10+, Opera */
+    }
+}
+
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        /* Chrome, Opera 15+, Safari 3.1+ */
+        -moz-transform: rotate(0deg);
+        /* Chrome, Opera 15+, Safari 3.1+ */
+        -o-transform: rotate(0deg);
+        /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);
+        /* IE 9 */
+        transform: rotate(0deg);
+        /* Firefox 16+, IE 10+, Opera */
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        /* Chrome, Opera 15+, Safari 3.1+ */
+        -moz-transform: rotate(360deg);
+        /* Chrome, Opera 15+, Safari 3.1+ */
+        -o-transform: rotate(360deg);
+        /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);
+        /* IE 9 */
+        transform: rotate(360deg);
+        /* Firefox 16+, IE 10+, Opera */
+    }
+}
+
+.top-casual-cards {
+    height: 180px;
+    width: 100%;
+}
+
+.ppmf-realmoney-3Boxes .gameCards {
+    flex-wrap: wrap;
+}
+
+.link-color {
+    color: #404569 !important;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.side-menu-cards {
+    height: 52px;
+    width: 52px !important;
+    margin: 0 auto;
+}
+
+@media(max-width: 1200px) {
+    .nav-wrapper {
+        height: 85px;
+        padding: 0px 10px !important;
+    }
+
+    .ppmf-sticky {
+        height: 85px;
+    }
+
+    .ppmf-nav-circle {
+        height: 85px !important;
+        width: 650px !important;
+    }
+
+    .ppmf-header-bg {
+        height: 410px;
+    }
+
+    .ppmf-header-circle {
+        height: 410px !important;
+        width: 650px !important;
+    }
+
+    .ppmf-header-triangle {
+        border-right: 400px solid rgb(19 12 42 / 30%);
+        border-top: 330px solid transparent;
+    }
+
+    .ppmf-header-inner-container {
+        height: 410px;
+    }
+
+    .ppmf-header-maintext,
+    .ppmf-copyright-bg .wholeContainer {
+        padding-bottom: 40px;
+    }
+
+    .ppmf-header-maintxt1 {
+        font-size: 42px;
+    }
+
+    .ppmf-header-maintxt2 {
+        font-size: 50px;
+        line-height: 55px;
+    }
+
+    .ppmf-header-phone-scan {
+        margin-bottom: 30px;
+    }
+
+    .ppmf-header-phone-txt {
+        font-size: 14px;
+    }
+
+    .ppmf-header-no-input {
+        height: 36px;
+        width: 250px;
+        padding: 0 15px 0px 42px;
+    }
+
+    ::placeholder {
+        font-size: 13px;
+    }
+
+    .ppmf-header-get-linkbtn {
+        width: 110px;
+        height: 38px;
+        font-size: 13px;
+    }
+
+    .ppmf-header-div-line {
+        height: 90px;
+        margin: 0px 10px 0px;
+    }
+
+    .ppmf-header-scan-img {
+        height: 70px !important;
+        width: 70px !important;
+        padding: 3px;
+    }
+
+    .ppmf-header-scan-txt {
+        padding-left: 10px;
+        font-size: 13px;
+    }
+
+    .smriti-bhuvi-Img {
+        height: 340px !important;
+    }
+
+    .ppmf-title {
+        font-size: 30px;
+    }
+
+    .ppmf-about-desc {
+        padding-right: 30px;
+    }
+
+    .ppmf-about-desc-txt {
+        font-size: 17px;
+    }
+
+    .ppmf-bhuvi-with-phone {
+        width: 390px !important;
+        height: auto !important;
+    }
+
+    .ppmf-about-3boxes-inner,
+    .ppmf-realmoney-3boxes-inner {
+        gap: 30px;
+    }
+
+    .ppmf-realmoney-cards-heading-txt,
+    .ppmf-joinPot-headingTxt {
+        font-size: 21px;
+    }
+
+    .ppmf-realmoney-cards {
+        height: 195px;
+        width: 315px;
+        margin-top: 10px;
+    }
+
+    .ppmf-realmoney-cards-mid {
+        height: 95px;
+        width: 309px;
+    }
+
+    .ppmf-realmoney-cards-btm-txt {
+        font-size: 16px;
+    }
+
+    .ppmf-realmoney-maintxt {
+        font-size: 17px;
+    }
+
+    .ppmf-realmoney-videotxt {
+        font-size: 19px;
+    }
+
+    .ppmf-realmoney-subtxt {
+        font-size: 17px;
+    }
+
+    .ppmf-tips-maintxt {
+        font-size: 17px;
+    }
+
+    .ppmf-tips-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px 40px;
+    }
+
+    .ppmf-tips-subtxt {
+        font-size: 19px;
+    }
+
+    .ppmf-consider-headtxt {
+        font-size: 19px;
+    }
+
+    .ppmf-consider-sub {
+        font-size: 15px;
+    }
+
+    .ppmf-review-grid {
+        gap: 40px;
+    }
+
+    .ppmf-joinPot-cards {
+        height: 150px;
+        width: 229px;
+        margin-top: 20px;
+    }
+
+    .ppmf-joinPot-card-mid {
+        height: 70px;
+        width: 225px;
+        border-image: linear-gradient(to bottom, transparent 15px, transparent 0px, #503A92 120px) 0% 100%;
+    }
+
+    .ppmf-joinPot-card-btmTxt {
+        padding: 15px 20px;
+        font-size: 14px;
+    }
+
+    .ppmf-fantasy-app-download {
+        gap: 20px;
+    }
+
+    .download-step-cards {
+        gap: 5px;
+    }
+}
+
+@media(max-width: 1024px) {
+    .ppmf-nav-item {
+        padding: 0px 20px !important;
+    }
+
+    .ppmf-header-bg {
+        height: 380px;
+    }
+
+    .ppmf-header-circle {
+        height: 380px !important;
+    }
+
+    .ppmf-header-triangle {
+        border-right: 320px solid rgb(19 12 42 / 30%);
+        border-top: 280px solid transparent;
+    }
+
+    .ppmf-header-inner-container {
+        height: 380px;
+    }
+
+    .ppmf-header-maintext {
+        padding-bottom: 35px;
+    }
+
+    .ppmf-header-maintxt1 {
+        font-size: 40px;
+    }
+
+    .ppmf-header-phone-txt {
+        font-size: 13px;
+    }
+
+    .ppmf-header-no-input {
+        width: 225px;
+        padding: 0 15px 0px 40px;
+    }
+
+    ::placeholder {
+        font-size: 13px;
+    }
+
+    .ppmf-header-get-linkbtn {
+        width: 110px;
+        font-size: 12px;
+    }
+
+    .ppmf-header-div-line {
+        height: 80px;
+        margin: 0px 5px 0px;
+    }
+
+    .ppmf-header-scan-img {
+        height: 65px !important;
+        width: 65px !important;
+        padding: 3px;
+    }
+
+    .ppmf-header-scan-txt {
+        padding-left: 5px;
+        font-size: 12px;
+    }
+
+    .smriti-bhuvi-Img {
+        height: 300px !important;
+    }
+
+    .ppmf-tabs-list li div,
+    .ppmf-tabs-list li h2 {
+        font-size: 14px;
+    }
+
+    .ppmf-all-tabs {
+        padding: 12px 3px;
+    }
+
+    .ppmf-pin-1,
+    .ppmf-pin-3 {
+        width: 150px;
+    }
+
+    .ppmf-pin-2 {
+        width: 110px;
+        margin-left: 40px;
+    }
+
+    .ppmf-pin-4 {
+        width: 110px;
+        margin-right: 40px;
+    }
+
+    .ppmf-title {
+        margin: 0px 10px;
+        font-size: 28px;
+    }
+
+    .ppmf-about-desc {
+        padding-right: 20px;
+    }
+
+    .ppmf-about-desc-txt {
+        font-size: 15px;
+    }
+
+    .ppmf-bhuvi-with-phone {
+        width: 340px !important;
+    }
+
+    .ppmf-about-3boxes-inner,
+    .ppmf-realmoney-3boxes-inner {
+        gap: 15px !important;
+    }
+
+    .ppmf-about-3boxes-inner-txt1 {
+        font-size: 17px;
+    }
+
+    .ppmf-about-3boxes-inner-txt2 {
+        font-size: 14px;
+    }
+
+    .ppmf-realmoney-cards-heading-txt,
+    .ppmf-joinPot-headingTxt {
+        font-size: 20px;
+    }
+
+    .ppmf-realmoney-cards {
+        height: 190px;
+        width: 285px;
+    }
+
+    .ppmf-realmoney-cards-mid {
+        height: 95px;
+        width: 279px;
+    }
+
+    .ppmf-realmoney-cards-btm-txt {
+        font-size: 15px;
+    }
+
+    .ppmf-realmoney-maintxt {
+        font-size: 15px;
+    }
+
+    .ppmf-realmoney-videotxt {
+        font-size: 17px;
+    }
+
+    .ppmf-realmoney-subtxt {
+        font-size: 15px;
+    }
+
+    .ppmf-realmoney-table-lefttxt {
+        font-size: 14px;
+    }
+
+    .ppmf-realmoney-table-righttxt {
+        width: 420px;
+        padding: 16px 18px;
+        font-size: 14px;
+    }
+
+    .ppmf-tips-maintxt {
+        font-size: 15px;
+    }
+
+    .ppmf-tips-grid {
+        gap: 10px 20px;
+    }
+
+    .ppmf-tips-subtxt {
+        font-size: 18px;
+    }
+
+    .ppmf-consider-headtxt {
+        font-size: 17px;
+    }
+
+    .ppmf-consider-sub {
+        padding: 5px 15px 5px 30px;
+        font-size: 13px;
+    }
+
+    .ppmf-topgames-grid,
+    .ppmf-review-grid {
+        gap: 15px;
+    }
+
+    .ppmf-howTo-joinPot {
+        gap: 10px;
+    }
+
+    .ppmf-joinPot-cards {
+        height: 142px;
+        width: 213px;
+        margin-top: 20px;
+    }
+
+    .ppmf-joinPot-card-mid {
+        height: 70px;
+        width: 209px;
+    }
+
+    .ppmf-joinPot-card-btmTxt {
+        padding: 15px 10px;
+    }
+
+    .ppmf-fantasy-app-download,
+    .download-step-cards {
+        gap: 10px;
+    }
+
+    .shading-card {
+        width: 283px;
+    }
+
+    .shading-card::after {
+        width: 287px;
+    }
+
+    .shading-card p {
+        margin: 14px 10px;
+    }
+}
+
+@media(max-width: 900px) {
+    .ppmf-nav-item {
+        padding: 0px 15px !important;
+    }
+
+    .gameCards {
+        flex-direction: column;
+    }
+
+    .card-clicks {
+        flex: none !important;
+        margin-top: 10px;
+    }
+
+    .ppmf-header-bg {
+        height: 370px;
+    }
+
+    .ppmf-nav-circle {
+        width: 600px !important;
+    }
+
+    .ppmf-header-circle {
+        height: 370px !important;
+        width: 600px !important;
+    }
+
+    .ppmf-header-inner-container {
+        height: 370px;
+    }
+
+    .ppmf-header-maintext {
+        padding-bottom: 30px;
+    }
+
+    .ppmf-header-no-input {
+        width: 245px;
+        padding: 0 15px 0px 40px;
+    }
+
+    .ppmf-header-div-line,
+    .ppmf-header-scan-img,
+    .ppmf-header-scan-txt {
+        display: none;
+    }
+
+    .ppmf-tabs-list li div,
+    .ppmf-tabs-list li h2 {
+        font-size: 13px;
+    }
+
+    .ppmf-all-tabs {
+        padding: 10px 3px;
+    }
+
+    .ppmf-pin-1,
+    .ppmf-pin-2,
+    .ppmf-pin-3,
+    .ppmf-pin-4 {
+        border-bottom: 3.5px solid;
+    }
+
+    .ppmf-pin-1,
+    .ppmf-pin-3 {
+        width: 140px;
+        margin-bottom: 3.5px;
+    }
+
+    .ppmf-pin-2 {
+        width: 100px;
+        margin-left: 40px;
+    }
+
+    .ppmf-pin-4 {
+        width: 100px;
+        margin-right: 40px;
+    }
+
+    .ppmf-title {
+        margin: 0px 10px;
+        font-size: 25px;
+    }
+
+    .ppmf-joinPot-headingTxt {
+        font-size: 22px !important;
+    }
+
+    .ppmf-about-desc {
+        padding-right: 10px;
+    }
+
+    .ppmf-about-desc-txt {
+        font-size: 13px;
+    }
+
+    .ppmf-bhuvi-with-phone {
+        width: 310px !important;
+    }
+
+    .ppmf-about-3boxes-inner {
+        gap: 15px;
+    }
+
+    .ppmf-about-3boxes-inner-bg {
+        height: 190px;
+    }
+
+    .ppmf-about-3boxes-inner-txt1 {
+        font-size: 15px;
+    }
+
+    .ppmf-about-3boxes-inner-txt2 {
+        height: 148px;
+        font-size: 12px;
+    }
+
+    .ppmf-about-clickhere-txt {
+        width: 480px;
+        font-size: 15px;
+    }
+
+    .ppmf-realmoney-cards-innercrcle {
+        font-size: 18px;
+    }
+
+    .ppmf-realmoney-cards-heading-txt,
+    .ppmf-joinPot-headingTxt {
+        font-size: 19px;
+    }
+
+    .ppmf-realmoney-cards {
+        height: 160px;
+        width: 240px;
+    }
+
+    .ppmf-realmoney-cards-mid {
+        height: 95px;
+        width: 234px;
+    }
+
+    .ppmf-realmoney-cards-btm-txt {
+        font-size: 14px;
+        padding: 0px 15px 10px;
+    }
+
+    .ppmf-realmoney-maintxt {
+        text-align: justify;
+        font-size: 14px;
+    }
+
+    .ppmf-realmoney-videotxt {
+        font-size: 15px;
+    }
+
+    .ppmf-realmoney-subtxt {
+        font-size: 13px;
+    }
+
+    .ppmf-realmoney-video {
+        padding-top: 10px;
+    }
+
+    .ppmf-realmoney-table {
+        padding-top: 10px;
+    }
+
+    .ppmf-realmoney-table-leftPart {
+        width: 220px;
+        border-right: 1px solid rgb(0, 0, 0, 0.1);
+    }
+
+    .ppmf-realmoney-table-lefttxt {
+        font-size: 14px;
+    }
+
+    .ppmf-realmoney-table-righttxt {
+        width: 400px;
+        padding: 16px 18px;
+        font-size: 14px;
+    }
+
+    .ppmf-tips-maintxt {
+        font-size: 14px;
+    }
+
+    .ppmf-tips-grid {
+        gap: 10px;
+    }
+
+    .ppmf-tips-subtxt {
+        font-size: 16px;
+    }
+
+    .ppmf-consider-sub {
+        padding: 5px 10px 5px 20px;
+    }
+
+    .ppmf-topgames-maintxt {
+        font-size: 16px;
+    }
+
+    .ppmf-topgames-grid {
+        gap: 10px;
+    }
+
+    .ppmf-topgames-txt {
+        font-size: 14px;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+    }
+
+    .ppmf-topgames-lasttxt {
+        font-size: 14px;
+        border-radius: 12px;
+    }
+
+    .ppmf-review-grid {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .ppmf-review-card {
+        width: 280px;
+    }
+
+    .ppmf-whyplay {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ppmf-whyplay .span-1:nth-child(1) .ppmf-whyplay-border-btm .ppmf-whyplay-inBox,
+    .ppmf-whyplay .span-1:nth-child(3) .ppmf-whyplay-border-btm .ppmf-whyplay-inBox,
+    .ppmf-whyplay .span-1:nth-child(5) .ppmf-whyplay-border-btm .ppmf-whyplay-inBox {
+        padding: 0px 10px 0px 0px;
+        border-left: none;
+        border-right: none;
+    }
+
+    .ppmf-whyplay .span-1:nth-child(2) .ppmf-whyplay-border-btm .ppmf-whyplay-inBox,
+    .ppmf-whyplay .span-1:nth-child(4) .ppmf-whyplay-border-btm .ppmf-whyplay-inBox,
+    .ppmf-whyplay .span-1:nth-child(6) .ppmf-whyplay-border-btm .ppmf-whyplay-inBox {
+        padding: 0px 0px 0px 10px;
+        border-left: 1px solid #C4D0DB;
+        border-right: none;
+    }
+
+    .ppmf-whyplay .span-1:nth-child(4) .ppmf-whyplay-border-btm {
+        border-bottom: 1px solid #C4D0DB;
+    }
+
+    .ppmf-whyplay-gametxt1 {
+        font-size: 16px;
+    }
+
+    .ppmf-whyplay-gametxt2 {
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    .ppmf-howTo-joinPot {
+        gap: 50px;
+    }
+
+    .ppmf-howTo-joinPot .span-2 {
+        grid-column: span 4;
+    }
+
+    .ppmf-joinPot-cards {
+        height: 225px;
+        width: 350px;
+        margin-top: 30px;
+    }
+
+    .ppmf-joinPot-card-mid {
+        height: 100px;
+        width: 344px;
+        border-image: linear-gradient(to bottom, transparent 20px, transparent 0px, #503A92 250px) 0% 100%;
+        border-width: 3px;
+    }
+
+    .ppmf-joinPot-card-btmTxt {
+        padding: 25px 30px;
+        font-size: 18px;
+    }
+
+    .ppmf-fantasy-app-download {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        gap: 30px;
+    }
+
+    .shading-card {
+        width: 239px;
+        border-bottom: 50px;
+        border-image: linear-gradient(to top, #503a92 -100px, transparent 100px) 1 100%;
+        padding-bottom: 15px;
+        margin: 60px 0px;
+    }
+
+    .shading-card::after {
+        height: 60px;
+        width: 243px;
+        bottom: -60px;
+    }
+
+    .shading-card p {
+        font-size: 12px;
+    }
+
+    .shading-card-no {
+        height: 25px;
+        width: 25px;
+        top: -20px;
+        left: 10px;
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 768px) {
+
+    /* .ppmf-topgames-card img {
+        height: 150px;
+        width: 100%;
+    } */
+    .side-menu-cards {
+        height: unset !important;
+    }
+
+    .gameCards {
+        flex-direction: column;
+    }
+
+    .card-clicks {
+        flex: none !important;
+        margin-top: 10px;
+    }
+
+    .ppmf-topgames-card:hover {
+        transition: none;
+        transform: none;
+    }
+
+    .p-t-sm-30 {
+        padding-top: 15px;
+    }
+
+    .ppmf-careers-title {
+        font-size: 25px;
+    }
+
+    .ppmf-offers-title {
+        font-size: 13px;
+    }
+
+    .bodyClass {
+        background-size: 100% !important;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    #Downloadbtn {
+        display: block;
+    }
+
+    .ppmf-mobHeader {
+        height: 565px;
+        background: #2c1b5e;
+        position: relative;
+    }
+
+    .ppmf-mob-bgcirc {
+        width: 100%;
+        height: 100%;
+        background-image: url("https://cdn.playerzpot.com/images/mob-bg-circle.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .ppmf-mob-nav {
+        padding: 20px 10px;
+    }
+
+    .ppmf-mob-banner-img {
+        margin-top: 0px;
+    }
+
+    .ppmf-mob-banner-txt {
+        width: 100%;
+        position: absolute;
+        bottom: 110px;
+    }
+
+    .ppmf-mob-banner-txt1 {
+        color: #fff;
+        font-weight: 700;
+        font-size: 42px;
+        text-transform: uppercase;
+    }
+
+    .ppmf-mob-banner-txt2 {
+        color: #12E4E4;
+        font-weight: 700;
+        font-size: 80px;
+        line-height: 70px;
+        text-transform: uppercase;
+    }
+
+    .ppmf-mob-download-app-btn {
+        width: 100%;
+        position: absolute;
+        bottom: -22px;
+        z-index: 99999;
+    }
+
+    .ppmf-mob-download-app-link {
+        text-decoration: none;
+    }
+
+    .ppmf-mob-download-app-txt {
+        width: 90%;
+        color: #fff;
+        font-weight: 500;
+        font-size: 17px;
+        border: 2px solid #fff;
+        background: #40b46e;
+        padding: 12px 0px;
+        border-radius: 15px;
+        text-transform: uppercase;
+        box-shadow: 0 2px 2px 0 rgb(0 0 0 / 16%), 0 0 0 1px rgb(0 0 0 / 8%);
+        transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        z-index: 1;
+    }
+
+    .ppmf-title-pins {
+        padding-bottom: 20px;
+    }
+
+    .ppmf-pin-1,
+    .ppmf-pin-3 {
+        border-bottom: 3px solid;
+        width: 80px;
+        margin-bottom: 0px;
+    }
+
+    .ppmf-pin-2,
+    .ppmf-pin-4 {
+        display: none;
+    }
+
+    .ppmf-title {
+        margin: 0px 5px;
+        font-size: 23px;
+    }
+
+    .ppmf-joinPot-headingTxt {
+        font-size: 20px !important;
+    }
+
+    .ppmf-container-bg-white,
+    .ppmf-container-bg-grey {
+        padding: 50px 0px;
+    }
+
+    .ppmf-about-descBox {
+        flex-direction: column !important;
+        justify-content: center;
+    }
+
+    .ppmf-about-desc {
+        padding-right: 0px;
+    }
+
+    .ppmf-about-desc-txt {
+        font-size: 15px;
+        padding-bottom: 15px;
+    }
+
+    .ppmf-about-3boxes-inner {
+        display: flex !important;
+        overflow-x: auto;
+    }
+
+    .ppmf-about-3boxes-inner-bg {
+        width: 240px;
+        height: 180px;
+        margin-bottom: 5px;
+    }
+
+    .ppmf-about-clickhere-txt {
+        width: 425px;
+        font-size: 14px;
+        padding: 8px 25px;
+        border-radius: 20px;
+    }
+
+    .ppmf-realmoney-3Boxes,
+    .ppmf-tips-content,
+    .ppmf-consider-boxes,
+    .ppmf-Container-content {
+        padding: 30px 0px 0px;
+    }
+
+    .ppmf-realmoney-3boxes-inner {
+        gap: 10px;
+    }
+
+    .ppmf-realmoney-3boxes-inner .span-2 {
+        grid-column: span 3 !important;
+    }
+
+    .ppmf-realmoney-cards-heading-txt,
+    .ppmf-joinPot-headingTxt {
+        font-size: 22px;
+    }
+
+    .ppmf-realmoney-cards {
+        height: 165px;
+        width: 283px;
+    }
+
+    .ppmf-realmoney-cards-mid {
+        height: 95px;
+        width: 277px;
+    }
+
+    .ppmf-realmoney-cards-btm-txt {
+        font-size: 15px;
+        padding: 15px 30px 10px;
+    }
+
+    .ppmf-realmoney-table-leftPart {
+        width: 190px;
+    }
+
+    .ppmf-realmoney-table-lefttxt {
+        font-size: 12px;
+    }
+
+    .ppmf-realmoney-table-righttxt {
+        width: 360px;
+        font-size: 12px;
+        padding: 17px 10px;
+    }
+
+    .ppmf-tips-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ppmf-tips-grid .span-1 {
+        grid-template-columns: span 1 !important;
+    }
+
+    .ppmf-consider-boxes {
+        gap: 10px;
+    }
+
+    .ppmf-consider-boxes .span-1 {
+        grid-column: span 2;
+    }
+
+    .ppmf-consider-left-box,
+    .ppmf-consider-right-box {
+        padding: 20px 30px;
+    }
+
+    .ppmf-topgames-maintxt {
+        width: 380px;
+        font-size: 15px;
+    }
+
+    .ppmf-topgames-grid {
+        width: 100%;
+        gap: 10px;
+        padding: 40px 0px 8px;
+        justify-content: start;
+    }
+
+    .ppmf-topgames-grid .span-1 {
+        grid-column: span 2 !important;
+    }
+
+    /* .ppmf-topgames-card img {
+        height: 120px !important;
+        width: 110px !important;
+    } */
+    .ppmf-review-content {
+        padding: 0px;
+    }
+
+    .ppmf-review-grid {
+        gap: 10px;
+        padding: 50px 0px 25px;
+    }
+
+    .ppmf-review-card {
+        width: 260px;
+    }
+
+    .ppmf-Container-review-bg {
+        padding: 50px 0px;
+    }
+
+    .ppmf-review-header {
+        font-size: 15px;
+    }
+
+    .ppmf-review-vertical-line {
+        height: 18px;
+    }
+
+    .ppmf-review-carduser-name {
+        font-size: 16px;
+    }
+
+    .ppmf-review-carduser-city {
+        font-size: 14px;
+    }
+
+    .ppmf-review-carduser-review {
+        font-size: 13px;
+    }
+
+    .ppmf-review-card-win-amt {
+        position: absolute;
+        bottom: -22px;
+        border-radius: 20px;
+        font-size: 18px;
+        width: 70%;
+    }
+
+    .ppmf-faq-accordions {
+        padding: 30px 0px 0px;
+    }
+
+    .ppmf-faq-accordion {
+        margin-bottom: 10px;
+    }
+
+    .ppmf-faq-accordion-heading {
+        font-size: 15px;
+        padding: 18px 40px 18px 15px;
+    }
+
+    #about-text {
+        padding: 0px 40px 20px 15px !important;
+        font-size: 13px !important;
+    }
+
+    #about-text-list {
+        padding: 0px 20px 20px 30px !important;
+        font-size: 13px !important;
+    }
+
+    .arrowImg {
+        top: 18px !important;
+        right: 20px !important;
+    }
+
+    .upDownArrow {
+        width: 18px !important;
+    }
+
+    .ppmf-howTo-joinPot {
+        gap: 30px 10px;
+    }
+
+    .ppmf-joinPot-cards {
+        height: 165px;
+        width: 286px;
+        margin-top: 20px;
+    }
+
+    .ppmf-joinPot-card-mid {
+        height: 75px;
+        width: 280px;
+        border-image: linear-gradient(to bottom, transparent 0px, transparent 0px, #503A92 200px) 0% 100%;
+    }
+
+    .ppmf-joinPot-card-btmTxt {
+        padding: 15px 30px;
+        font-size: 17px;
+    }
+
+    .sportsFantasy-one {
+        justify-content: space-between !important;
+    }
+
+    .sportsCards-fantasy {
+        flex-direction: column;
+        width: 140px;
+    }
+
+    .sportsCards-fantasy-name {
+        font-size: 15px;
+    }
+
+    .flex-col {
+        flex-direction: column;
+    }
+
+    .game-card-name {
+        text-align: start;
+    }
+
+    .game-card-one {
+        width: 150px;
+    }
+
+    .casual-games-one {
+        flex-wrap: wrap;
+        gap: 10px !important;
+    }
+
+    .justify-start {
+        justify-content: start !important;
+    }
+
+    .game-one-title {
+        padding-top: 20px;
+    }
+
+    .download-step-cards {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+}
+
+@media(max-width: 600px) {
+    #offer-main {
+        justify-content: center;
+    }
+
+    .offer-box {
+        width: 300px;
+    }
+
+    .breadCrumb {
+        font-size: 13px !important;
+    }
+
+    .top-casual-cards {
+        height: 120px;
+        width: 100%;
+    }
+
+    .gameCards {
+        flex-direction: column;
+    }
+
+    .card-clicks {
+        flex: none !important;
+        margin-top: 10px;
+    }
+
+    iframe#player {
+        height: 260px !important;
+        width: 100%;
+    }
+
+    .p-t-50 {
+        padding-top: 20px;
+    }
+
+    .ppmf-mob-nav {
+        padding: 15px 10px;
+    }
+
+    .ppmf-mob-banner-img {
+        margin-top: 30px;
+    }
+
+    .ppmf-mob-banner-txt {
+        bottom: 55px;
+    }
+
+    .ppmf-mob-banner-txt1 {
+        font-size: 35px;
+    }
+
+    .ppmf-mob-banner-txt2 {
+        font-size: 55px;
+        line-height: 60px;
+    }
+
+    .ppmf-pin-1,
+    .ppmf-pin-3 {
+        width: 60px;
+    }
+
+    .ppmf-title {
+        font-size: 20px;
+    }
+
+    .ppmf-joinPot-headingTxt {
+        font-size: 18px !important;
+    }
+
+    .ppmf-about-desc {
+        padding-right: 0px;
+    }
+
+    .ppmf-about-desc-txt {
+        font-size: 14px;
+    }
+
+    .ppmf-about-3boxes-inner-bg {
+        width: 200px;
+        height: 192px;
+    }
+
+    .ppmf-about-clickhere-txt {
+        width: auto;
+        padding: 6px 27px;
+        font-size: 13px;
+    }
+
+    .ppmf-realmoney-3boxes-inner {
+        grid-template-columns: repeat(12, 1fr);
+        gap: 35px 10px !important;
+    }
+
+    .ppmf-realmoney-3boxes-inner .span-2 {
+        grid-column: span 12 !important;
+        margin: 0px auto;
+    }
+
+    .ppmf-realmoney-cards {
+        height: 210px;
+        width: 340px;
+    }
+
+    .ppmf-realmoney-cards-mid {
+        height: 110px;
+        width: 334px;
+    }
+
+    .ppmf-realmoney-cards-btm-txt {
+        font-size: 18px;
+        padding: 0px 30px 15px;
+    }
+
+    .ppmf-tips-boxes {
+        flex-direction: column;
+    }
+
+    .ppmf-tips-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px 10px;
+    }
+
+    .ppmf-tips-grid .span-1 {
+        grid-template-columns: span 1 !important;
+    }
+
+    .ppmf-tips-subtxt {
+        padding: 10px 20px;
+        text-align: center;
+    }
+
+    .ppmf-consider-left-box,
+    .ppmf-consider-right-box {
+        padding: 15px 20px;
+    }
+
+    .ppmf-consider-headtxt {
+        font-size: 16px;
+    }
+
+    .ppmf-consider-sub {
+        font-size: 13px;
+    }
+
+    .ppmf-topgames-grid .span-1 {
+        grid-column: span 2 !important;
+    }
+
+    .ppmf-topgames-maintxt {
+        width: 320px;
+        font-size: 14px;
+    }
+
+    /* .ppmf-topgames-cardImg {
+        width: 110px;
+    } */
+    .ppmf-topgames-txt {
+        font-size: 13px;
+        /* width: 110px; */
+    }
+
+    .ppmf-topgames-lasttxt {
+        font-size: 13px;
+    }
+
+    .ppmf-whyplay {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .ppmf-whyplay .span-1:nth-child(1) .ppmf-whyplay-border-btm .ppmf-whyplay-inBox,
+    .ppmf-whyplay .span-1:nth-child(2) .ppmf-whyplay-border-btm .ppmf-whyplay-inBox,
+    .ppmf-whyplay .span-1:nth-child(3) .ppmf-whyplay-border-btm .ppmf-whyplay-inBox,
+    .ppmf-whyplay .span-1:nth-child(4) .ppmf-whyplay-border-btm .ppmf-whyplay-inBox,
+    .ppmf-whyplay .span-1:nth-child(5) .ppmf-whyplay-border-btm .ppmf-whyplay-inBox,
+    .ppmf-whyplay .span-1:nth-child(6) .ppmf-whyplay-border-btm .ppmf-whyplay-inBox {
+        padding: 0px;
+        border-left: none;
+        border-right: none;
+    }
+
+    .ppmf-whyplay .span-1:nth-child(5) .ppmf-whyplay-border-btm {
+        border-bottom: 1px solid #C4D0DB;
+    }
+
+    .ppmf-whyplay-gametxt1 {
+        font-size: 16px;
+    }
+
+    .ppmf-whyplay-gametxt2 {
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    .ppmf-howTo-joinPot {
+        gap: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ppmf-howTo-joinPot .span-2 {
+        grid-column: span 8;
+    }
+
+    .ppmf-joinPot-headingTxt {
+        font-size: 25px;
+    }
+
+    .ppmf-joinPot-cards {
+        height: 180px;
+        width: 300px;
+        margin-top: 15px;
+    }
+
+    .ppmf-joinPot-card-mid {
+        height: 90px;
+        width: 294px;
+        border-image: linear-gradient(to bottom, transparent 0px, transparent 0px, #503A92 200px) 0% 100%;
+    }
+
+    .ppmf-joinPot-card-btmTxt {
+        padding: 22px 15px;
+        font-size: 18px;
+    }
+
+    .ppmf-fantasy-app-download {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+
+    .download-step-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .shading-card {
+        width: 329px;
+    }
+
+    .shading-card::after {
+        width: 333px;
+    }
+
+    .shading-card p {
+        margin: 14px 15px;
+        font-size: 14px;
+    }
+
+    .shading-card-no {
+        height: 35px;
+        width: 35px;
+        top: -30px;
+        left: 15px;
+        font-size: 30px;
+    }
+}
+
+.ppmf-download-btn div {
+    font-size: 10px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.ppmf-download-btn div span {
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.ppmf-download-btn {
+    width: 140px;
+    margin-top: 10px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #000000;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.ppmf-download-btn img {
+    padding-right: 10px;
+}
+
+.offer-time {
+    /* position: absolute;
+    top: -26px;
+    left:20px; */
+    width: max-content;
+    height: 24px;
+    background: #FFFFFF;
+    /* background-image: linear-gradient(to bottom, transparent 85%, rgb(0 0 0 / 10%)); */
+    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.15);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1px solid #AC9CE9;
+    padding: 0 10px;
+    color: #D1263A;
+    font-weight: 700;
+    font-size: 14px;
+    padding-top: 4px;
+    margin-left: 15px;
+}
+
+#offer-main {
+    width: 100%;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.offerHeader {
+    font-size: 20px;
+    font-weight: 700;
+    color: #404569;
+}
+
+#togglefantasyDiv .side-menu-cards img {
+    border-radius: 7px !important;
+}
